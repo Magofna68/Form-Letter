@@ -1,3 +1,4 @@
+// Brooke's Notes
 // const myCallBack = function() { // function expression
 //   const name1Input = $("input#name-field").val();
 
@@ -17,11 +18,13 @@
 // const result = add(1,2);
 
 $(function() {
-  $("#name-field").submit(function() {
+  $("#form").submit(function() {
     const name1Input = $("input#name-field").val();
   
-    $(".name-field").text(name1Input);
+    $(".name-insert").text(name1Input);
 
-    $("#").show()
+    $("#hide-letter").toggle();
+
+    event.preventDefault();
   });
 });
